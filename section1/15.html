@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+
+        let len_s = s.length;
+
+        if (len_s % 2 == 0) {
+          answer += s[len_s / 2 - 1];
+          answer += s[len_s / 2];
+        } else {
+          answer += s[Math.floor(len_s / 2)];
+        }
+
+        return answer;
+      }
+      console.log(solution("good"));
+    </script>
+  </body>
+</html>
