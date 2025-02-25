@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let new_str = s.toUpperCase(); // 대문자로 변환
+        let reversed_str = new_str.split("").reverse().join(""); // 문자열을 뒤집음
+
+        if (new_str === reversed_str) {
+          return "YES";
+        } else {
+          return "NO";
+        }
+      }
+
+      let str = "goooG";
+      console.log(solution(str)); // "YES" 출력
+    </script>
+  </body>
+</html>

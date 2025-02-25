@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let clean_str = "";
+        for (let e of s.toUpperCase()) {
+          if (e.charCodeAt() >= 65 && e.charCodeAt() <= 90) {
+            clean_str += e;
+          }
+        }
+        if (clean_str === clean_str.split("").reverse().join("")) {
+          return "YES";
+        } else {
+          return "NO";
+        }
+      }
+
+      let str = "found7, time: study; Yduts; emit, 7Dnuof";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
